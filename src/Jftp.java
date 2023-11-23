@@ -39,7 +39,7 @@ class Jftpg
 							{
 									new Jftpg().log(file);
 							}
-						}	
+					}	
 				}
 			}
 			else if(option_command.equals("push"))
