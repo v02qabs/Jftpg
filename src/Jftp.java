@@ -97,6 +97,7 @@ class Jftpg
 	{	client = new FTPClient();
 	       client.connect("pro.chobi.net");
        		client.login("takesue090","Takesue!9!A");
+		System.out.println("server dir: ");
        		Scanner scan_dir = new Scanner(System.in);
        		String dir = scan_dir.next();
 		client.changeDirectory(dir);
