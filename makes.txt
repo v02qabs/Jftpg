@@ -1,0 +1,7 @@
+WHOAMIS=$(shell whoami)
+install:
+ifeq ($(WHOAMIS),root)
+	echo root
+else
+	echo non root
+endif
