@@ -10,12 +10,13 @@ install:
 	@echo $(JAVA_HOME)
 	javac -cp $(JAVA_HOME) $(SRC) -d ./
 	jar cvfm Jftp.jar $(MANIFEST) $(PACKAGE)/Jftpg.class
+	
+ifeq ($(WHOAMI),root)
+	echo "root"
+	install ./Jftp.jar /usr/share/java/.
+	install ./lib/ftp4j.jar /usr/share/java/.
+else
+	echo "nonroot"
+endif
 
-
-ifbun:
-	ifeq ($(WHOAMI), root)
-		echo "root"
-	else
-		echo "no root"
-	endif
 
