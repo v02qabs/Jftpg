@@ -12,12 +12,11 @@ public class MainActivity {
 		inputj = new InputJ();
 		System.out.println("オプション");
 		String option = inputj.Input();
-		if(option.equals("make")) {
+		if(option.equals("make_server_dir")) {
 			System.out.println("パス");
 			String input_path = inputj.Input();
-			if(input_path.equals(".")) {
-				System.out.println("here.");
-			}
+			
 		}
+		else if(option.equals())
 	}
 }
